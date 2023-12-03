@@ -8,4 +8,8 @@ std::string NativeSampleModule::reverseString(jsi::Runtime &rt,
                                               std::string input) {
   return std::string(input.rbegin(), input.rend());
 }
+
+int NativeSampleModule::doubleNumber(jsi::Runtime &rt, int number) {
+  return number * 2;
+}
 } // namespace facebook::react
